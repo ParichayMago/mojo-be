@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 import dotenv from "dotenv"
-import userRouter from "./src/Router/user.router";
+import userRouter from "./Router/user.router";
 import cors from  "cors";
 import cookieParser from "cookie-parser";
 
