@@ -15,7 +15,7 @@ export const codeToTempToken = async (code: string): Promise<ICodeToTempAccessTo
         client_id: '1169547817377137',
         client_secret: `${client_secret}`,
         grant_type: 'authorization_code',
-        redirect_uri: 'https://localhost:5173/auth/token/',
+        redirect_uri: `${process.env.re_url}`,
         code: code,
       }).toString(),
     });
